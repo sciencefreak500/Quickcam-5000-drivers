@@ -1,0 +1,338 @@
+;-------------------------------------------------------
+; File: lPRO464c.inf
+; Logitech Video2 Camera Installation file
+; Copyright (c) 1996-2007 Logitech Inc.
+;-------------------------------------------------------
+
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%PVD%
+LayoutFile=LAYOUT.INF
+CatalogFile=lPRO464c.cat
+DriverVer=07/18/2007, 11.1.0.2016
+
+[DestinationDirs]
+DefaultDestDir=11               ; LDID_SYS
+Pro5000.CopyFiles.NT=10,system32\drivers
+lvselsus.CopySys=10,system32\drivers
+lvsels64.CopySys=10,system32\drivers
+
+[ControlFlags]
+ExcludeFromselect=*
+
+[Manufacturer]
+%LogitechMfg%=Logitech.Section,nt,ntamd64,nt.6.0,ntamd64.6.0
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles]
+lvuvcflt.sys=1
+lvselsus.sys=1
+lvsels64.sys=1
+
+[Logitech.Section]
+%USB\VID_046D&PID_08C2.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C2    ; Orbit
+%USB\VID_046D&PID_08C3.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C3    ; Notebooks Pro
+%USB\VID_046D&PID_08C5.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C5    ; Zoom
+%USB\VID_046D&PID_09C0.DeviceDesc%=LogiHubDELL.Pro5000,USB\Vid_046d&Pid_09C0    ; Dell Notebooks
+%USB\VID_046D&PID_08C9.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C9    ; UltraVision
+%USB\VID_046D&PID_08CA.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CA    ; Fusion
+%USB\VID_046D&PID_08CB.DeviceDesc%=LogiHubSS.Pro5000,USB\Vid_046d&Pid_08CB  ; Notebooks Pro
+%USB\VID_046D&PID_08CC.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CC  ; Orbit/Sphere MP
+%USB\VID_046D&PID_08CE.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CE    ; Zoom2
+%USB\VID_046D&PID_09C1.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_09C1    ; Grant, QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0990    ; Stewie
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0991    ; Franklin
+%USB\VID_046D&PID_0992.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0992    ; SuperSully
+
+[Logitech.Section.NT]
+%USB\VID_046D&PID_08C2.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C2    ; Orbit
+%USB\VID_046D&PID_08C3.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C3    ; Notebooks Pro
+%USB\VID_046D&PID_08C5.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C5    ; Zoom
+%USB\VID_046D&PID_08C9.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08C9    ; UltraVision
+%USB\VID_046D&PID_08CA.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CA    ; Fusion
+%USB\VID_046D&PID_08CB.DeviceDesc%=LogiHubSS.Pro5000,USB\Vid_046d&Pid_08CB  ; Notebooks Pro
+%USB\VID_046D&PID_08CC.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CC  ; Orbit/Sphere MP
+%USB\VID_046D&PID_08CE.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_08CE    ; Zoom2
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0990    ; Stewie
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0991    ; Franklin
+%USB\VID_046D&PID_0992.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0992    ; SuperSully
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_0994  ; Orbit/Sphere AF
+%USB\VID_046D&PID_09C0.DeviceDesc%=LogiHubDELL.Pro5000,USB\Vid_046d&Pid_09C0    ; Dell Notebooks
+%USB\VID_046D&PID_09C1.DeviceDesc%=LogiHub.Pro5000,USB\Vid_046d&Pid_09C1	; Grant, QuickCam for Notebooks Deluxe
+
+[Logitech.Section.NTamd64]
+%USB\VID_046D&PID_08C2.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C2     ; Orbit
+%USB\VID_046D&PID_08C3.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C3     ; Notebooks Pro
+%USB\VID_046D&PID_08C5.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C5     ; Zoom
+%USB\VID_046D&PID_08C9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C9     ; UltraVision
+%USB\VID_046D&PID_08CA.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CA     ; Fusion
+%USB\VID_046D&PID_08CB.DeviceDesc%=LogiHubSS.Dev.NTX64,USB\Vid_046d&Pid_08CB    ; Notebooks Pro
+%USB\VID_046D&PID_08CC.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CC    ; Orbit/Sphere MP
+%USB\VID_046D&PID_08CE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CE     ; Zoom2
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0990     ; Stewie
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0991     ; Franklin
+%USB\VID_046D&PID_0992.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0992     ; SuperSully
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0994    ; Orbit/Sphere AF
+%USB\VID_046D&PID_09C0.DeviceDesc%=LogiHubDELL.Dev.NTX64,USB\Vid_046d&Pid_09C0  ; Notebooks
+%USB\VID_046D&PID_09C1.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_09C1	        ; Grant, QuickCam for Notebooks Deluxe
+
+[Logitech.Section.NT.6.0]
+%USB\VID_046D&PID_08C2.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C2         ; Orbit
+%USB\VID_046D&PID_08C3.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C3         ; Notebooks Pro
+%USB\VID_046D&PID_08C5.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C5	        ; Zoom
+%USB\VID_046D&PID_08C9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C9         ; UltraVision
+%USB\VID_046D&PID_08CA.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CA         ; Fusion
+%USB\VID_046D&PID_08CB.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CB         ; Notebooks Pro
+%USB\VID_046D&PID_08CC.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CC         ; Orbit/Sphere MP
+%USB\VID_046D&PID_08CE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CE         ; Zoom2
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0990         ; Stewie
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0991         ; Franklin
+%USB\VID_046D&PID_0992.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0992         ; SuperSully
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0994         ; Orbit/Sphere AF
+%USB\VID_046D&PID_09C0.DeviceDesc%=LogiHubDELL.Simple.NT,USB\Vid_046d&Pid_09C0  ; Dell Notebooks
+%USB\VID_046D&PID_09C1.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_09C1         ; Grant, QuickCam for Notebooks Deluxe
+
+[Logitech.Section.NTamd64.6.0]
+%USB\VID_046D&PID_08C2.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C2         ; Orbit
+%USB\VID_046D&PID_08C3.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C3         ; Notebooks Pro
+%USB\VID_046D&PID_08C5.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C5         ; Zoom
+%USB\VID_046D&PID_08C9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08C9         ; UltraVision
+%USB\VID_046D&PID_08CA.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CA         ; Fusion
+%USB\VID_046D&PID_08CB.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CB         ; Notebooks Pro
+%USB\VID_046D&PID_08CC.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CC         ; Orbit/Sphere MP
+%USB\VID_046D&PID_08CE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08CE         ; Zoom2
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0990         ; Stewie
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0991         ; Franklin
+%USB\VID_046D&PID_0992.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0992         ; SuperSully
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_0994         ; Orbit/Sphere AF
+%USB\VID_046D&PID_09C0.DeviceDesc%=LogiHubDELL.Simple.NT,USB\Vid_046d&Pid_09C0  ; Dell Notebooks
+%USB\VID_046D&PID_09C1.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_09C1         ; Grant, QuickCam for Notebooks Deluxe
+
+[LogiHub.Dev.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=LogiHub.CopyFiles.NT
+
+[LogiHub.Dev.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+
+[LogiHubDELL.Simple.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=LogiHub.CopyFiles.NT
+AddReg=MedusaOEMType_DELL.AddReg
+
+[LogiHubDELL.Simple.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+
+[AddSelSusFilter.NT]
+HKR,,LowerFilters,0x10008,lvselsus
+
+[AddSelSusFilter.NTX64]
+HKR,,LowerFilters,0x10008,lvsels64
+
+[LogiHub.Pro5000]
+Include=usb.inf
+Needs=Composite.Dev
+AddReg=LogiHub.AddReg
+CopyFiles=Pro5000.CopyFiles
+
+[LogiHub.Pro5000.HW]
+AddReg = Pro5000.Dev_HW_AddReg
+
+[Pro5000.Dev_HW_AddReg]
+HKR,,"LowerFilters",0x00010000,"lvuvcflt.sys"
+
+[LogiHub.Pro5000.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=Pro5000.CopyFiles.NT
+DriverVer=07/18/2007, 11.1.0.2016
+
+[LogiHub.Pro5000.NT.HW]
+AddReg = Pro5000.Dev_NT_HW_AddReg
+
+[LogiHub.Pro5000.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService = FilterService,,Filter_Service_Inst
+
+[Pro5000.Dev_NT_HW_AddReg]
+HKR,,"LowerFilters",0x00010008,"FilterService"
+
+[Filter_Service_Inst]
+DisplayName = "UVC Filter Service"
+ServiceType = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType = 3 ;%SERVICE_DEMAND_START%
+ErrorControl = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\lvuvcflt.sys
+LoadOrderGroup = extended base
+
+[LogiHubDELL.Pro5000]
+Include=usb.inf
+Needs=Composite.Dev
+AddReg=LogiHub.AddReg,MedusaOEMType_DELL.AddReg,LVSELSUSDisable.AddReg
+CopyFiles=Pro5000.CopyFiles
+
+[LogiHubDELL.Pro5000.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=Pro5000.CopyFiles.NT,lvselsus.CopySys
+AddReg = LVSELSUS.AddReg,MedusaOEMType_DELL.AddReg,LVSELSUSDisable.AddReg
+DriverVer=07/18/2007, 11.1.0.2016
+
+[LogiHubDELL.Pro5000.NT.HW]
+AddReg = Pro5000.Dev_NT_HW_AddReg,AddSelSusFilter.NT
+
+[LogiHubDELL.Pro5000.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService = FilterService,,Filter_Service_Inst
+AddService = lvselsus,0x00000000,lvselsus_Service
+
+[LogiHubSS.Pro5000]
+Include=usb.inf
+Needs=Composite.Dev
+AddReg=LogiHub.AddReg
+CopyFiles=Pro5000.CopyFiles
+
+[Pro5000.Dev_HW_AddReg]
+HKR,,"LowerFilters",0x00010000,"lvuvcflt.sys"
+
+[LogiHubSS.Pro5000.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=Pro5000.CopyFiles.NT,lvselsus.CopySys
+AddReg = LVSELSUS.AddReg
+DriverVer=07/18/2007, 11.1.0.2016
+
+[LogiHubSS.Pro5000.NT.HW]
+AddReg = Pro5000.Dev_NT_HW_AddReg,AddSelSusFilter.NT
+
+[LogiHubSS.Pro5000.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService = FilterService,,Filter_Service_Inst
+AddService = lvselsus,0x00000000,lvselsus_Service
+
+[LogiHubDELL.Dev.NTX64]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=lvsels64.CopySys
+AddReg = LVSELSUS.AddReg,MedusaOEMType_DELL.AddReg,LVSELSUSDisable.AddReg
+
+[LogiHubDELL.Dev.NTX64.HW]
+AddReg = AddSelSusFilter.NTX64
+
+[LogiHubDELL.Dev.NTX64.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService = lvsels64,0x00000000,lvsels64_Service
+
+[LogiHubSS.Dev.NTX64]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=lvsels64.CopySys
+AddReg = LVSELSUS.AddReg
+
+[LogiHubSS.Dev.NTX64.HW]
+AddReg = AddSelSusFilter.NTX64
+
+[LogiHubSS.Dev.NTX64.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService = lvsels64,0x00000000,lvsels64_Service
+
+[LVSELSUS.AddReg]
+HKR,,LVSelSusCompositeFilter,0x10001,0x1
+HKR,,LVSelSusInterfaceGUID,,"{FA33C4CD-7C6D-4a5d-8AD4-CFB86D02AE9E}"
+HKR,,LVPowSaveTimeOutMS,0x10001,0x7148 ;29 s for composite filter
+
+[lvselsus.CopySys]
+lvselsus.sys
+
+[lvselsus_Service]
+DisplayName    = %lvselsus.SrvDesc%
+ServiceType    = 1                   ; = SERVICE_KERNEL_DRIVER
+StartType      = 3                   ; = SERVICE_DEMAND_START
+ErrorControl   = 1                   ; = SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\lvselsus.sys
+
+[lvsels64.CopySys]
+lvsels64.sys
+
+[lvsels64_Service]
+DisplayName    = %lvselsus.SrvDesc%
+ServiceType    = 1                   ; = SERVICE_KERNEL_DRIVER
+StartType      = 3                   ; = SERVICE_DEMAND_START
+ErrorControl   = 1                   ; = SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\lvsels64.sys
+
+[LogiHub.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,usbhub.sys
+
+[LogiHub.CopyFiles.NT]
+
+[Pro5000.CopyFiles.NT]
+lvuvcflt.sys
+
+[MedusaOEMType_DELL.AddReg]
+HKR,,MedusaOEMType,0x00010001,4
+
+[LVSELSUSDisable.AddReg]
+HKR,,LVPowSaveDisable,0x10001,0x1 ; Disable power save mechanism
+HKR,,LVSSDisable,0x00010001,0x1   ; Disable selective suspend
+
+[Uninstall]
+DelFiles = pro5000.copyfiles.nt,LogiHub.CopyFiles.NT,lvselsus.CopySys,lvsels64.CopySys
+
+
+[Strings]
+LogitechMfg="Logitech"
+DISK_NAME="Logitech USB Video Camera Disk"
+PVD="Logitech"
+lvselsus.SrvDesc="Logitech Selective Suspend Filter"
+USB\VID_046D&PID_08C2.DeviceDesc="Logitech USB Camera (Orbit/Sphere MP)"
+USB\VID_046D&PID_08C3.DeviceDesc="Logitech USB Camera (Notebooks Pro)"
+USB\VID_046D&PID_08C5.DeviceDesc="Logitech USB Camera (Pro 5000)"
+USB\VID_046D&PID_08C9.DeviceDesc="Logitech USB Camera (Ultra Vision)"
+USB\VID_046D&PID_08CA.DeviceDesc="Logitech USB Camera (Fusion)"
+USB\VID_046D&PID_08CB.DeviceDesc="Logitech USB Camera (Notebooks Pro)"
+USB\VID_046D&PID_08CC.DeviceDesc="Logitech USB Camera (Orbit/Sphere MP)"
+USB\VID_046D&PID_08CE.DeviceDesc="Logitech USB Camera (Pro 5000)"
+USB\VID_046D&PID_09C0.DeviceDesc="Logitech USB Camera (Dell Notebooks)"
+USB\VID_046D&PID_09C1.DeviceDesc="Logitech USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_0990.DeviceDesc="Logitech USB Camera (Pro 9000)"
+USB\VID_046D&PID_0991.DeviceDesc="Logitech USB Camera (Pro for Notebooks)"
+USB\VID_046D&PID_0992.DeviceDesc="Logitech USB Camera (Communicate Deluxe)"
+USB\VID_046D&PID_0994.DeviceDesc="Logitech USB Camera (Orbit/Sphere AF)"
+
+[Strings.0411]
+LogitechMfg="Logicool"
+DISK_NAME="Logicool USB Video Camera Disk"
+PVD="Logicool"
+USB\VID_046D&PID_08C2.DeviceDesc="Logicool USB Camera (Orbit/Sphere MP)"
+USB\VID_046D&PID_08C3.DeviceDesc="Logicool USB Camera (Notebooks Pro)"
+USB\VID_046D&PID_08C5.DeviceDesc="Logicool USB Camera (Pro 5000)"
+USB\VID_046D&PID_08C9.DeviceDesc="Logicool USB Camera (Ultra Vision)"
+USB\VID_046D&PID_08CA.DeviceDesc="Logicool USB Camera (Fusion)"
+USB\VID_046D&PID_08CB.DeviceDesc="Logicool USB Camera (Notebooks Pro)"
+USB\VID_046D&PID_08CC.DeviceDesc="Logicool USB Camera (Orbit/Sphere MP)"
+USB\VID_046D&PID_08CE.DeviceDesc="Logicool USB Camera (Pro 5000)"
+USB\VID_046D&PID_09C0.DeviceDesc="Logicool USB Camera (Dell Notebooks)"
+USB\VID_046D&PID_09C1.DeviceDesc="Logicool USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_0990.DeviceDesc="Logicool USB Camera (Pro 9000)"
+USB\VID_046D&PID_0991.DeviceDesc="Logicool USB Camera (Pro for Notebooks)"
+USB\VID_046D&PID_0992.DeviceDesc="Logicool USB Camera (Communicate Deluxe)"
+USB\VID_046D&PID_0994.DeviceDesc="Logicool USB Camera (Orbit/Sphere AF)"
+lvselsus.SrvDesc="Logitech Selective Suspend Filter"
+
+
+

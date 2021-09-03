@@ -1,0 +1,133 @@
+;-------------------------------------------------------
+; File: lPEPI64c.inf
+; Logitech Video2 Camera Installation file
+; Copyright (c) 1996-2007 Logitech Inc.
+;-------------------------------------------------------
+
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%PVD%
+LayoutFile=LAYOUT.INF
+CatalogFile=lPEPI64c.cat
+DriverVer=07/18/2007, 11.1.0.2016
+
+[DestinationDirs]
+DefaultDestDir=11               ; LDID_SYS
+
+[ControlFlags]
+ExcludeFromselect=*
+
+[Manufacturer]
+%LogitechMfg%=Logitech.Section,nt,ntamd64,nt.6.0,ntamd64.6.0
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles]
+
+[Logitech.Section]
+%USB\VID_046D&PID_08A9.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08A9        ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08AD.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08AD        ; QuickCam Communicate STX
+%USB\VID_046D&PID_08AE.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08AE        ; QuickCam for Notebooks
+%USB\VID_046D&PID_08D7.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08D7        ; QuickCam Communicate STX
+%USB\VID_046D&PID_08D8.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08D8        ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08D9.DeviceDesc%=LogiHub.Dev,USB\VID_046D&PID_08D9        ; QuickCam IM
+%USB\VID_046D&PID_08DA.DeviceDesc%=LogiHub.Dev,USB\VID_046D&PID_08DA        ; QuickCam Messenger
+%USB\VID_046D&PID_08DD.DeviceDesc%=LogiHub.Dev,USB\Vid_046D&Pid_08DD        ; QuickCam for Notebooks
+%USB\VID_046D&PID_08AF.DeviceDesc%=LogiHub.Dev,USB\Vid_046D&Pid_08AF        ; Logitech QuickCam Easy/Cool Mickey Mouse Plus
+
+[Logitech.Section.NT]
+%USB\VID_046D&PID_08A9.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08A9        ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08AD.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08AD        ; QuickCam Communicate STX
+%USB\VID_046D&PID_08AE.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08AE        ; QuickCam for Notebooks
+%USB\VID_046D&PID_08D7.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08D7        ; QuickCam Communicate STX
+%USB\VID_046D&PID_08D8.DeviceDesc%=LogiHub.Dev,USB\Vid_046d&Pid_08D8        ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08D9.DeviceDesc%=LogiHub.Dev,USB\VID_046D&PID_08D9        ; QuickCam IM
+%USB\VID_046D&PID_08DA.DeviceDesc%=LogiHub.Dev,USB\VID_046D&PID_08DA        ; QuickCam Messenger
+%USB\VID_046D&PID_08DD.DeviceDesc%=LogiHub.Dev,USB\Vid_046D&Pid_08DD        ; Washington
+
+[Logitech.Section.NTamd64]
+%USB\VID_046D&PID_08A9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08A9     ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08AD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AD     ; QuickCam Communicate STX
+%USB\VID_046D&PID_08AE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AE     ; QuickCam for Notebooks
+%USB\VID_046D&PID_08D7.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D7     ; QuickCam Communicate STX
+%USB\VID_046D&PID_08D8.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D8     ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08D9.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08D9     ; QuickCam IM
+%USB\VID_046D&PID_08DA.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08DA     ; QuickCam Messenger
+%USB\VID_046D&PID_08DD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046D&Pid_08DD     ; QuickCam for Notebooks
+
+[Logitech.Section.NT.6.0]
+%USB\VID_046D&PID_08A9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08A9         ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08AD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AD         ; QuickCam Communicate STX
+%USB\VID_046D&PID_08AE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AE         ; QuickCam for Notebooks
+%USB\VID_046D&PID_08D7.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D7         ; QuickCam Communicate STX
+%USB\VID_046D&PID_08D8.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D8         ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08D9.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08D9         ; QuickCam IM
+%USB\VID_046D&PID_08DA.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08DA         ; QuickCam Messenger
+%USB\VID_046D&PID_08DD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046D&Pid_08DD         ; QuickCam for Notebooks
+
+[Logitech.Section.NTamd64.6.0]
+%USB\VID_046D&PID_08A9.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08A9         ; Logitech QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08AD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AD         ; Logitech QuickCam Communicate STX
+%USB\VID_046D&PID_08AE.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08AE         ; Logitech QuickCam for Notebooks
+%USB\VID_046D&PID_08D7.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D7         ; Logitech QuickCam Communicate STX
+%USB\VID_046D&PID_08D8.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046d&Pid_08D8         ; QuickCam for Notebooks Deluxe
+%USB\VID_046D&PID_08D9.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08D9         ; QuickCam IM
+%USB\VID_046D&PID_08DA.DeviceDesc%=LogiHub.Dev.NT,USB\VID_046D&PID_08DA         ; QuickCam Messenger
+%USB\VID_046D&PID_08DD.DeviceDesc%=LogiHub.Dev.NT,USB\Vid_046D&Pid_08DD         ; Washington
+
+[LogiHub.Dev]
+AddReg=LogiHub.AddReg
+CopyFiles=LogiHub.CopyFiles
+
+[LogiHub.Dev.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=LogiHub.CopyFiles.NT
+
+[LogiHub.Dev.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+
+[LogiHub.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,usbhub.sys
+
+[LogiHub.CopyFiles.NT]
+
+[Uninstall]
+DelFiles = logihub.copyfiles.nt
+
+
+[Strings]
+LogitechMfg="Logitech"
+DISK_NAME="Logitech USB Video Camera Disk"
+PVD="Logitech"
+USB\VID_046D&PID_08A9.DeviceDesc="Logitech USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_08AD.DeviceDesc="Logitech USB Camera (Communicate STX)"
+USB\VID_046D&PID_08AE.DeviceDesc="Logitech USB Camera (Notebooks)"
+USB\VID_046D&PID_08AF.DeviceDesc="Logitech USB Camera (Easy/Cool)"
+USB\VID_046D&PID_08D7.DeviceDesc="Logitech USB Camera (Communicate STX)"
+USB\VID_046D&PID_08D8.DeviceDesc="Logitech USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_08D9.DeviceDesc="Logitech USB Camera (IM/Connect)"
+USB\VID_046D&PID_08DA.DeviceDesc="Logitech USB Camera (QuickCam)"
+USB\VID_046D&PID_08DD.DeviceDesc="Logitech USB Camera (Notebooks)"
+
+[Strings.0411]
+LogitechMfg="Logicool"
+DISK_NAME="Logicool USB Video Camera Disk"
+PVD="Logicool"
+USB\VID_046D&PID_08A9.DeviceDesc="Logicool USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_08AD.DeviceDesc="Logicool USB Camera (Communicate STX)"
+USB\VID_046D&PID_08AE.DeviceDesc="Logicool USB Camera (Notebooks)"
+USB\VID_046D&PID_08AF.DeviceDesc="Logicool USB Camera (Easy/Cool)"
+USB\VID_046D&PID_08D7.DeviceDesc="Logicool USB Camera (Communicate STX)"
+USB\VID_046D&PID_08D8.DeviceDesc="Logicool USB Camera (Notebooks Deluxe)"
+USB\VID_046D&PID_08D9.DeviceDesc="Logicool USB Camera (IM/Connect)"
+USB\VID_046D&PID_08DA.DeviceDesc="Logicool USB Camera (Qcam)"
+USB\VID_046D&PID_08DD.DeviceDesc="Logicool USB Camera (Notebooks)"
+
+
+

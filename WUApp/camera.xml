@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LAIManifest Date="10/25/2006" Time="13:00:00" LAIManifestVersion="1.0.0.0" LAIManifestSchema="1.0" Author="Logitech Inc.">
+  <!-- Logitech Automated Install file -->
+  <!-- -->
+  <language xml:lang="en-us" />
+  <!-- -->
+  <!-- use to enable/disable logging, useful for troubleshooting -->
+  <logging enabled="0" />
+  <!-- -->
+  <!-- tokens are used to substitute the value of the ID field with the value of the element associated with the ID field when ##tokenname## is used -->
+  <!-- Elements like CurrentAppVersion and CurrentDriverVersion will probably be updated at build time with the current installer build version and driver version of the package -->
+  <tokens>
+    <token ID="CurrentAppVersion">11.10.2021</token>
+    <token ID="CurrentDriverVersion">11.10.2021</token>
+    <token ID="CurrentAppFriendlyVersion">11.1.0.2021</token>
+    <token ID="CurrentDriverFriendlyVersion">11.1.0.2021</token>
+    <!-- InstalledProductCode might be only be defined for the Manifest that is installed after it is copied to the system -->
+  </tokens>
+  <!-- -->
+  <!-- Used for current product -->
+  <CurrentProduct>
+    <token ID="UpgradeCode">{A402013B-7656-4F6F-B57F-5A8EF69F5FC4}</token>
+    <token ID="ProductVersion">##CurrentAppVersion##</token>
+    <token ID="ProductFriendlyVersion">##CurrentAppFriendlyVersion##</token>
+    <token ID="CmdLine">
+    </token>
+  </CurrentProduct>
+  <!-- -->
+</LAIManifest>

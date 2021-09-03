@@ -1,0 +1,956 @@
+;-------------------------------------------------------
+; File: lELCH64v.inf
+; Logitech Video2 Camera Installation file
+; Copyright (c) 1996-2007 Logitech Inc.
+;-------------------------------------------------------
+
+[Version]
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%PVD%
+CatalogFile=lELCH64v.cat
+DriverVer=07/18/2007, 11.1.0.2016
+
+[Manufacturer]
+%LogitechMfg%=Logitech,nt,ntamd64,nt.6.0,ntamd64.6.0
+
+[Logitech]
+%PID_092D_DD%=PID_092D,USB\VID_046D&PID_092D&MI_00      ; Logitech QuickCam Express(Elch 2)
+%PID_092E_DD%=PID_092E,USB\VID_046D&PID_092E&MI_00      ; Logitech QuickCam Chat(Olive)
+%PID_092F_DD%=PID_092F,USB\VID_046D&PID_092F&MI_00      ; Logitech QuickCam Express(Elch 2)
+
+[Logitech.NT]
+%PID_092D_DD%=PID_092D.XP,USB\VID_046D&PID_092D         ; Logitech QuickCam Express(Elch 2)
+%PID_092E_DD%=PID_092E.XP,USB\VID_046D&PID_092E         ; Logitech QuickCam Chat(Olive)
+%PID_092F_DD%=PID_092F.XP,USB\VID_046D&PID_092F         ; Logitech QuickCam Express(Elch 2)
+
+[Logitech.NTamd64]
+%PID_092D_DD%=PID_092D.XPAMD64,USB\VID_046D&PID_092D            ; Logitech QuickCam Express(Elch 2)
+%PID_092E_DD%=PID_092E.XPAMD64,USB\VID_046D&PID_092E            ; Logitech QuickCam Chat(Olive)
+%PID_092F_DD%=PID_092F.XPAMD64,USB\VID_046D&PID_092F            ; Logitech QuickCam Express(Elch 2)
+
+[Logitech.NT.6.0]
+%PID_092D_DD%=PID_092D.VISTA,USB\VID_046D&PID_092D          ; Logitech QuickCam Express(Elch 2)
+%PID_092E_DD%=PID_092E.VISTA,USB\VID_046D&PID_092E          ; Logitech QuickCam Chat(Olive)
+%PID_092F_DD%=PID_092F.VISTA,USB\VID_046D&PID_092F          ; Logitech QuickCam Express(Elch 2)
+
+[Logitech.NTamd64.6.0]
+%PID_092D_DD%=PID_092D.XPAMD64,USB\VID_046D&PID_092D        ; Logitech QuickCam Express(Elch 2)
+%PID_092E_DD%=PID_092E.XPAMD64,USB\VID_046D&PID_092E        ; Logitech QuickCam Chat(Olive)
+%PID_092F_DD%=PID_092F.XPAMD64,USB\VID_046D&PID_092F        ; Logitech QuickCam Express(Elch 2)
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles]
+LVUI2.dll=1
+LVUI2RC.dll=1
+lvcodec2.dll=1
+lvcod64.dll=1
+lvcoinst.dll=1
+lvcoinst.ini=1
+LVUSBSta.sys=1
+lvWIAext.dll=1
+LV561AV.sys=1	; Elch 2 video driver
+LV561V64.sys=1  ; Elch 2 video driver for 64 bit
+LVCoin64.dll=1
+LVCoin64.INI=1
+LVUSBS64.SYS=1
+LVUI64.dll=1
+LVUIRC64.dll=1
+Repository.reg=1
+WUApp32.exe=1
+WUApp64.exe=1
+
+[DestinationDirs]
+DefaultDestDir=11 ; system
+MISC.CopyFiles=10,TWAIN_32\QuickCam      ; Twain
+CopyCoInstaller=11
+CopyCoInstaller_X64=11
+CopyUserDrv=11
+CopyUserDrvNT=11
+CopyUserDrvNT_AMD64=11
+CopyUserDrvNT_AMD64_WOW6432=10,syswow64
+LVUI.CopyFiles=11
+LVUI.CopyFiles_AMD64=11
+LVUI.CopyFiles_AMD64_WOW6432=10,syswow64
+USBMonitor.CopyFiles=10,system32\drivers
+USBMonitor_X64.CopyFiles=10,system32\drivers
+PID_0928.CopyDrivers=10,system32\drivers
+PID_0928.DelDrivers=10,system32\drivers
+PID_0928.CopyDrivers_AMD64=10,system32\drivers
+PID_0928.DelDrivers_AMD64=10,system32\drivers
+MSVCR.OS.Files=10,system32
+MSVCR_X64.OS.Files=10,syswow64
+STREAM.OS.Files=10,system32\drivers
+WUAPP32.Files=16427,logishrd
+WUAPP64.Files=16427,logishrd
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[PID_0928.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561AV.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x1110
+HKR,,LVDistribution,0x10001,0x0
+
+[PID_0928.Prop.AddReg]
+HKLM,%DCA500ACONTROL%,"AntiFlicker",0x10001,5
+HKLM,%DCA500ACONTROL%,"SnapMethod",0x10001,0
+HKLM,%DCA500ACONTROL%,"EnableAE",0x10001,02
+HKLM,%DCA500ACONTROL%,"EnableAWB",0x10001,1
+HKLM,%DCA500ACONTROL%,"AEMethod",0x10001,0
+HKLM,%DCA500ACONTROL%,"SensorType",0x10001,0x1
+HKLM,%DCA500ACONTROL%,"Interface",0x10001,0x0
+HKLM,%DCA500ACONTROL%,"Rgain",0x10001,64
+HKLM,%DCA500ACONTROL%,"Grgain",0x10001,64
+HKLM,%DCA500ACONTROL%,"Bgain",0x10001,122
+HKLM,%DCA500ACONTROL%,"Gbgain",0x10001,64
+HKLM,%DCA500ACONTROL%,"Roffset",0x10001,0
+HKLM,%DCA500ACONTROL%,"Groffset",0x10001,0
+HKLM,%DCA500ACONTROL%,"Boffset",0x10001,0
+HKLM,%DCA500ACONTROL%,"Gboffset",0x10001,0
+HKLM,%DCA500ACONTROL%,"DisplayMode",0x10001,0
+HKLM,%DCA500ACONTROL%,"VID",0x10001,256
+HKLM,%DCA500ACONTROL%,"PrvAE",0x10001,2
+HKLM,%DCA500ACONTROL%,"AWBspeed",0x10001,4
+HKLM,%DCA500ACONTROL%,"EnableContrast",0x10001,2
+HKLM,%DCA500ACONTROL%,"Dim",0x10001,0
+HKLM,%DCA500ACONTROL%,"EnableSmooth",0x10001,1
+HKLM,%DCA500ACONTROL%,"BadPxThresholdR",0x10001,60
+HKLM,%DCA500ACONTROL%,"BadPxThresholdB",0x10001,30
+HKLM,%DCA500ACONTROL%,"FixBadpixel",0x10001,1
+HKLM,%DVIDEOPROCAMP%,"Brightness",0x10001,9
+HKLM,%DVIDEOPROCAMP%,"Contrast",0x10001,2
+HKLM,%DVIDEOPROCAMP%,"Hue",0x10001,8
+HKLM,%DVIDEOPROCAMP%,"Saturation",0x10001,4
+HKLM,%DVIDEOPROCAMP%,"Sharpness",0x10001,7
+HKLM,%DVIDEOPROCAMP%,"Gamma",0x10001,2
+HKLM,%DVIDEOPROCAMP%,"Whitebalance",0x10001,1
+HKLM,%DCA500ACONTROL%,"TargetY",0x10001,9
+HKLM,%DCA500ACONTROL%,"YIndex",0x10001,14
+HKLM,%DCA500ACONTROL%,"Compensate_Line",0x10001,1
+HKLM,"%KEY_CONFERENCING%\%PID_0928_DD%",dwImageSize,0x1,40,05,40,06
+HKLM,"%KEY_CONFERENCING%\%PID_0928_DD%",dwStreamingMode,0x1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_0928_DD%",dwDialogs,0x1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_0928_DD%",dwNumColors,0x1,2C,00,00,00
+HKLM,%DCA500ACONTROL%,"LowLight",0x10001,1
+HKLM,%DCA500ACONTROL%,"ColorBoost",0x10001,0
+
+[PID_0928.CopyDrivers]
+LV561AV.SYS
+
+[PID_0928.CopyDrivers_AMD64]
+LV561V64.sys
+
+[PID_0928.ServiceInstall]
+DisplayName   = %PID_0928_DD%(PID_0928)
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\LV561AV.SYS
+
+[PID_092864.ServiceInstall]
+DisplayName   = %PID_0928_DD%(PID_0928)
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\LV561V64.SYS
+
+[PID_0928.DelReg]
+
+[PID_0928.DelDrivers]
+LV561AV.SYS
+
+[PID_0928.DelDrivers_AMD64]
+LV561V64.sys
+
+[PID_092D]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration
+AddReg=     PID_0928.AddReg,PID_0928.Prop.AddReg,VFW.AddReg, LVCAM2_Prop.AddReg, LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni, LVfWWDM.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrv, LVUI.CopyFiles,CopyCoInstaller
+VendorSetup=%lvcoinst32%,SetupEntryPoint PID_092D
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092D.NT]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092D.AddReg,PID_0928.Prop.AddReg,PID_092D.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092D.XP]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092D.AddReg,PID_0928.Prop.AddReg,PID_092D.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092D.VISTA]
+Include=    ks.inf, kscaptur.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092D.AddReg,PID_0928.Prop.AddReg,PID_092D.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092D.XPAMD64]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092D_X64.AddReg,PID_0928.Prop.AddReg,PID_092D.AddReg,VFW.AddReg.NT,LVCAM2_Prop_X64.AddReg,LVCAM2_Prop_AMD64.AddReg,LVCam2_Prop_BW_X64.AddReg,LVCam2_Prop_BW_AMD64.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers_AMD64
+CopyFiles=  WUAPP64.Files,PID_0928.CopyDrivers_AMD64,MSVCR_X64.OS.Files,MISC.CopyFiles,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64,LVUI.CopyFiles_AMD64_WOW6432,USBMonitor_X64.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092D.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092D.XP.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092D.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092D.XPAMD64.CoInstallers]
+CopyFiles=CopyCoInstaller_X64
+AddReg=CoInstaller_X64.AddReg
+
+[PID_092D.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561AV.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092D_X64.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561V64.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092D.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092D.VideoCapture
+
+[PID_092D.XP.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092D.VideoCapture
+
+[PID_092D.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092D.VideoCapture
+
+[PID_092D.XPAMD64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092D.VideoCapture
+
+[PID_092D.VideoCapture]
+AddReg=PID_092D.VideoCapture.AddReg
+
+[PID_092D.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%PID_092D_DD%
+HKR,,ExtensionDLL,,%ExtensionDLL%
+HKR,,RTCFlags,0x00010001,0x00000010
+
+[PID_092D.NT.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092D.XP.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092D.VISTA.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092D.XPAMD64.Services]
+AddService = PID_0928,0x00000002,PID_092864.ServiceInstall
+AddService = LVUSBS64,0x00000000,USBMonitor_X64.ServiceInstall
+
+[PID_092E]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration
+AddReg=     PID_0928.AddReg,PID_0928.Prop.AddReg,VFW.AddReg, LVCAM2_Prop.AddReg, LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni, LVfWWDM.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrv, LVUI.CopyFiles,CopyCoInstaller
+VendorSetup=%lvcoinst32%,SetupEntryPoint PID_092E
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092E.NT]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092E.AddReg,PID_0928.Prop.AddReg,PID_092E.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092E.XP]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092E.AddReg,PID_0928.Prop.AddReg,PID_092E.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092E.VISTA]
+Include=    ks.inf, kscaptur.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092E.AddReg,PID_0928.Prop.AddReg,PID_092E.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092E.XPAMD64]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092E_X64.AddReg, PID_0928.Prop.AddReg, PID_092E.AddReg, VFW.AddReg.NT,LVCAM2_Prop_X64.AddReg,LVCAM2_Prop_AMD64.AddReg,LVCam2_Prop_BW_X64.AddReg,LVCam2_Prop_BW_AMD64.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers_AMD64
+CopyFiles=  WUAPP64.Files,PID_0928.CopyDrivers_AMD64,MSVCR_X64.OS.Files,MISC.CopyFiles,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64,LVUI.CopyFiles_AMD64_WOW6432,USBMonitor_X64.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092E.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092E.XP.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092E.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092E.XPAMD64.CoInstallers]
+CopyFiles=CopyCoInstaller_X64
+AddReg=CoInstaller_X64.AddReg
+
+[PID_092E.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561AV.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092E_X64.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561V64.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092E.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092E.VideoCapture
+
+[PID_092E.XP.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092E.VideoCapture
+
+[PID_092E.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092E.VideoCapture
+
+[PID_092E.XPAMD64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092E.VideoCapture
+
+[PID_092E.VideoCapture]
+AddReg=PID_092E.VideoCapture.AddReg
+
+[PID_092E.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%PID_092E_DD%
+HKR,,ExtensionDLL,,%ExtensionDLL%
+HKR,,RTCFlags,0x00010001,0x00000010
+
+[PID_092E.NT.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092E.XP.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092E.VISTA.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092E.XPAMD64.Services]
+AddService = PID_0928,0x00000002,PID_092864.ServiceInstall
+AddService = LVUSBS64,0x00000000,USBMonitor_X64.ServiceInstall
+
+[PID_092F]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration
+AddReg=     PID_0928.AddReg,PID_0928.Prop.AddReg,VFW.AddReg, LVCAM2_Prop.AddReg, LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni, LVfWWDM.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrv, LVUI.CopyFiles,CopyCoInstaller
+VendorSetup=%lvcoinst32%,SetupEntryPoint PID_092F
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092F.NT]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092F.AddReg,PID_0928.Prop.AddReg,PID_092F.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092F.XP]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092F.AddReg,PID_0928.Prop.AddReg,PID_092F.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092F.VISTA]
+Include=    ks.inf, kscaptur.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092F.AddReg,PID_0928.Prop.AddReg,PID_092F.AddReg,VFW.AddReg.NT, LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers
+CopyFiles=  WUAPP32.Files,PID_0928.CopyDrivers,STREAM.OS.Files,MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092F.XPAMD64]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+DelReg=     PID_0928.DelReg
+AddReg=     FTRep.AddReg, PID_092F_X64.AddReg,PID_0928.Prop.AddReg,PID_092F.AddReg,VFW.AddReg.NT,LVCAM2_Prop_X64.AddReg,LVCAM2_Prop_AMD64.AddReg,LVCam2_Prop_BW_X64.AddReg,LVCam2_Prop_BW_AMD64.AddReg,AppRegister.AddReg,LVSELSUSDisable.AddReg
+UpdateInis= CODECS.I420.UpdateIni
+DelFiles=   PID_0928.DelDrivers_AMD64
+CopyFiles=  WUAPP64.Files,PID_0928.CopyDrivers_AMD64,MSVCR_X64.OS.Files,MISC.CopyFiles,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64,LVUI.CopyFiles_AMD64_WOW6432,USBMonitor_X64.CopyFiles
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x31
+DeviceData=DualCam.DeviceData
+ICMProfiles=%ICM_Prfl%
+DriverVer=07/18/2007, 11.1.0.2016
+
+[PID_092F.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092F.XP.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092F.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID_092F.XPAMD64.CoInstallers]
+CopyFiles=CopyCoInstaller_X64
+AddReg=CoInstaller_X64.AddReg
+
+[PID_092F.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561AV.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092F_X64.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,LV561V64.SYS
+HKR,,PageOutWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,00
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,LVFunctions,0x10001,0x01
+HKR,,LVFeatures,0x10001,0x0
+HKR,,LVCategories,0x10001,0x2110
+HKR,,LVDistribution,0x10001,0x02
+
+[PID_092F.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092F.VideoCapture
+
+[PID_092F.XP.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092F.VideoCapture
+
+[PID_092F.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092F.VideoCapture
+
+[PID_092F.XPAMD64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%FILTER_NAME%,PID_092F.VideoCapture
+
+[PID_092F.VideoCapture]
+AddReg=PID_092F.VideoCapture.AddReg
+
+[PID_092F.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%PID_092F_DD%
+HKR,,ExtensionDLL,,%ExtensionDLL%
+HKR,,RTCFlags,0x00010001,0x00000010
+
+[PID_092F.NT.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092F.XP.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092F.VISTA.Services]
+AddService = PID_0928,0x00000002,PID_0928.ServiceInstall
+AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
+
+[PID_092F.XPAMD64.Services]
+AddService = PID_0928,0x00000002,PID_092864.ServiceInstall
+AddService = LVUSBS64,0x00000000,USBMonitor_X64.ServiceInstall
+
+[LVSELSUSDisable.AddReg]
+HKR,,LVPowSaveDisable,0x10001,0x1 ; Disable power save mechanism
+HKR,,LVSSDisable,0x00010001,0x1   ; Disable selective suspend
+HKR,,LVSelSusInterfaceGUID,,"{FA33C4CD-7C6D-4a5d-8AD4-CFB86D02AE9E}"
+
+[CoInstaller.AddReg]
+HKR,,CoInstallers32,0x00010000,"%lvcoinst32%,LvCoInstaller"
+
+[CoInstaller_X64.AddReg]
+HKR,,CoInstallers32,0x00010000,"%lvcoinst64%,LvCoInstaller"
+
+[DualCam.DeviceData]
+Server=local
+UI DLL=sti.dll
+UI Class ID={D51DE17F-33FD-496b-9E9F-7B0E16AA0117}
+
+[AppRegister.AddReg]
+HKLM,%REG_APPS%"\Arrival\890","ApplicationPath",,%DualCamApp%
+HKLM,%REG_APPS%"\Arrival\900","ApplicationPath",,%DualCamApp%
+HKLM,%REG_APPS%"\Arrival\901","ApplicationPath",,%DualCamApp%
+HKLM,%REG_APPS%"\Arrival\960","ApplicationPath",,%DualCamApp%
+HKLM,%REG_APPS%"\Arrival\905","ApplicationPath",,%DualCamApp%
+HKLM,%REG_APPS%"\Arrival\905","FirstTime",0x10001,0x1
+HKLM,%REG_APPS%"\QuickSync","ApplicationPath",,%QuickSyncApp%
+HKLM,%REG_APPS%"\QuickSync","ApplicationArgument",,%QuickSyncArg%
+
+[VFW.AddReg.NT]
+HKLM,%QC_DRVS%,"OEM",,%PVD%
+HKLM,%QC_DRVS%,"VFW",,%LVfWWDMDriverDesc%
+HKLM,%MMDrivers%,MSVideo,,vfwwdm32.dll
+
+[LVfWWDM.UpdateIni]
+system.ini,drivers,,"MSVideo.VfWWDM=vfwwdm.drv"
+
+[CODECS.I420.UpdateIni]
+system.ini,drivers32,,"VIDC.I420=lvcodec2.dll"
+
+[CopyUserDrv]
+lvcodec2.dll			; Don't replace if older
+
+[CopyUserDrvNT]
+lvcodec2.dll
+
+[CopyUserDrvNT_AMD64_WOW6432]
+lvcodec2.dll
+
+[CopyUserDrvNT_AMD64]
+lvcod64.dll
+
+[LVUI.CopyFiles]
+LVUI2.dll
+LVUI2RC.dll
+
+[LVUI.CopyFiles_AMD64]
+LVUI64.dll
+LVUIRC64.dll
+
+[LVUI.CopyFiles_AMD64_WOW6432]
+LVUI2.dll
+LVUI2RC.dll
+
+[MISC.CopyFiles]
+lvWIAext.dll
+
+[USBMonitor.CopyFiles]
+LVUSBSta.sys
+
+[USBMonitor_X64.CopyFiles]
+LVUSBS64.sys
+
+[USBMonitor.ServiceInstall]
+DisplayName   = "Logitech USB Monitor Filter"
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\LVUSBSta.sys
+
+[USBMonitor_X64.ServiceInstall]
+DisplayName   = "Logitech USB Monitor Filter"
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\LVUSBS64.sys
+
+[CopyCoInstaller]
+%lvcoinst32%,lvcoinst.dll
+lvcoinst.ini
+Repository.reg
+
+[CopyCoInstaller_X64]
+%lvcoinst64%,lvcoin64.dll
+lvcoin64.ini
+Repository.reg
+
+[LVCam2_Prop_BW.AddReg]
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%\PropertyPages
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%\PropertyPages\%CLSID_PP_Bandwidth%,,,%CLSID_PP_Bandwidth_Desc%
+HKCR,CLSID\%CLSID_PP_Bandwidth%,,,%CLSID_PP_Bandwidth_Desc%
+HKCR,CLSID\%CLSID_PP_Bandwidth%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Bandwidth%\InprocServer32,ThreadingModel,,Both
+
+[LVCam2_Prop_BW_X64.AddReg]
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%\PropertyPages
+HKLM,%MedSets%\%CLSID_PropSet_8116_PPages%\PropertyPages\%CLSID_PP_Bandwidth%,,,%CLSID_PP_Bandwidth_Desc%
+HKCR,CLSID\%CLSID_PP_Bandwidth%,,,%CLSID_PP_Bandwidth_Desc%
+HKCR,CLSID\%CLSID_PP_Bandwidth%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Bandwidth%\InprocServer32,ThreadingModel,,Both
+
+[LVCam2_Prop_BW_AMD64.AddReg]
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Bandwidth%,,,%CLSID_PP_Bandwidth_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Bandwidth%\InprocServer32,,,%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Bandwidth%\InprocServer32,ThreadingModel,,Both
+
+[LVCAM2_Prop.AddReg]
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages
+HKCR,CLSID\%CLSID_PP_Advanced%,,,%CLSID_PP_Advanced_Desc%
+HKCR,CLSID\%CLSID_PP_Advanced%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Advanced%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Advanced%,,,%CLSID_PP_Advanced_Desc%
+HKCR,CLSID\%CLSID_PP_Status%,,,%CLSID_PP_Status_Desc%
+HKCR,CLSID\%CLSID_PP_Status%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Status%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Status%,,,%CLSID_PP_Status_Desc%
+HKCR,CLSID\%CLSID_PP_Device%,,,%CLSID_PP_Device_Desc%
+HKCR,CLSID\%CLSID_PP_Device%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Device%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Device%,,,%CLSID_PP_Device_Desc%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%,,,%CLSID_PP_Troubleshooting_Desc%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Troubleshooting%,,,%CLSID_PP_Troubleshooting_Desc%
+HKCR,CLSID\%CLSID_PP_Traffic%,,,%CLSID_PP_Traffic_Desc%
+HKCR,CLSID\%CLSID_PP_Traffic%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Traffic%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Traffic%,,,%CLSID_PP_Traffic_Desc%
+HKCR,CLSID\%CLSID_PP_Debug%,,,%CLSID_PP_Debug_Desc%
+HKCR,CLSID\%CLSID_PP_Debug%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Debug%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Debug%,,,%CLSID_PP_Debug_Desc%
+HKCR,CLSID\%CLSID_PP_Registers%,,,%CLSID_PP_Registers_Desc%
+HKCR,CLSID\%CLSID_PP_Registers%\InprocServer32,,,%11%\%ExtensionDLL%
+HKCR,CLSID\%CLSID_PP_Registers%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Registers%,,,%CLSID_PP_Registers_Desc%
+
+[LVCAM2_Prop_X64.AddReg]
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages
+HKCR,CLSID\%CLSID_PP_Advanced%,,,%CLSID_PP_Advanced_Desc%
+HKCR,CLSID\%CLSID_PP_Advanced%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Advanced%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Advanced%,,,%CLSID_PP_Advanced_Desc%
+HKCR,CLSID\%CLSID_PP_Status%,,,%CLSID_PP_Status_Desc%
+HKCR,CLSID\%CLSID_PP_Status%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Status%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Status%,,,%CLSID_PP_Status_Desc%
+HKCR,CLSID\%CLSID_PP_Device%,,,%CLSID_PP_Device_Desc%
+HKCR,CLSID\%CLSID_PP_Device%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Device%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Device%,,,%CLSID_PP_Device_Desc%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%,,,%CLSID_PP_Troubleshooting_Desc%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Troubleshooting%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Troubleshooting%,,,%CLSID_PP_Troubleshooting_Desc%
+HKCR,CLSID\%CLSID_PP_Traffic%,,,%CLSID_PP_Traffic_Desc%
+HKCR,CLSID\%CLSID_PP_Traffic%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Traffic%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Traffic%,,,%CLSID_PP_Traffic_Desc%
+HKCR,CLSID\%CLSID_PP_Debug%,,,%CLSID_PP_Debug_Desc%
+HKCR,CLSID\%CLSID_PP_Debug%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Debug%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Debug%,,,%CLSID_PP_Debug_Desc%
+HKCR,CLSID\%CLSID_PP_Registers%,,,%CLSID_PP_Registers_Desc%
+HKCR,CLSID\%CLSID_PP_Registers%\InprocServer32,,,%11%\%ExtensionDLL64%
+HKCR,CLSID\%CLSID_PP_Registers%\InprocServer32,ThreadingModel,,Both
+HKLM,%MedSets%\%CLSID_PropSet_LVCam_PPages%\PropertyPages\%CLSID_PP_Registers%,,,%CLSID_PP_Registers_Desc%
+
+[LVCAM2_Prop_AMD64.AddReg]
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Advanced%,,,%CLSID_PP_Advanced_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Advanced%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Advanced%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Status%,,,%CLSID_PP_Status_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Status%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Status%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Device%,,,%CLSID_PP_Device_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Device%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Device%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Troubleshooting%,,,%CLSID_PP_Troubleshooting_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Troubleshooting%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Troubleshooting%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Traffic%,,,%CLSID_PP_Traffic_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Traffic%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Traffic%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Debug%,,,%CLSID_PP_Debug_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Debug%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Debug%\InprocServer32,ThreadingModel,,Both
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Registers%,,,%CLSID_PP_Registers_Desc%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Registers%\InprocServer32,,,%11%\%ExtensionDLL%
+HKLM,%AMD64_WOW6432CLSIDNODE%\%CLSID_PP_Registers%\InprocServer32,ThreadingModel,,Both
+
+[MSVCR.OS.Files]
+
+[MSVCR_X64.OS.Files]
+
+[STREAM.OS.Files]
+
+[FTRep.AddReg]
+HKLM,SOFTWARE\Logitech\LVCoInstaller\FTERepAdd,Name,,"regedit.exe"
+HKLM,SOFTWARE\Logitech\LVCoInstaller\FTERepAdd,Parameters,,"/s %11%\Repository.reg"
+HKLM,SOFTWARE\Logitech\LVCoInstaller\FTERepAdd,Path,,%10%
+HKLM,SOFTWARE\Logitech\LVCoInstaller\FTERepAdd,PreInstall,0x00010001,1
+
+[WUAPP32.Files]
+WUApp32.exe
+
+[WUAPP64.Files]
+WUApp64.exe
+
+[Uninstall]
+DelFiles = WUAPP32.Files,PID_0928.CopyDrivers,MISC.CopyFiles,CopyUserDrvNT,LVUI.CopyFiles,USBMonitor.CopyFiles,CopyCoInstaller,WUAPP64.Files,PID_0928.CopyDrivers_AMD64,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64, \
+ LVUI.CopyFiles_AMD64_WOW6432,USBMonitor_X64.CopyFiles,CopyCoInstaller_X64,CopyUserDrv
+DelReg   = pid_0928.prop.addreg,vfw.addreg.nt,lvcam2_prop.addreg,lvcam2_prop_bw.addreg,appregister.addreg,lvcam2_prop_x64.addreg,lvcam2_prop_amd64.addreg,lvcam2_prop_bw_x64.addreg,lvcam2_prop_bw_amd64.addreg
+
+[Strings]
+ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+SERVICE_KERNEL_DRIVER=1
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+MMDrivers="Software\Microsoft\Windows NT\CurrentVersion\Drivers32"
+MedSets="SYSTEM\CurrentControlSet\Control\MediaSets"
+ExtensionDLL = "LVUI2.dll"
+ExtensionDLL64 = "LVUI64.dll"
+DualCamApp="Qsync.exe"
+QuickSyncApp="Qsync.exe"
+QuickSyncArg="/QuickSync"
+ICM_Prfl="sRGB Color Space Profile.icm"
+REG_APPS="Software\Logitech\LVComS\CurrentVersion\RegisteredApplications\{D2B479C0-C3F2-11D1-B014-00AA00CF90F9}"
+QC_DRVS="Software\Logitech\QuickCam\Drivers"
+PVD="Logitech"
+LogitechMfg="Logitech"
+DISK_NAME="Logitech USB Video Camera Disk"
+PID_0928_DD="Logitech QuickCam Express"
+PID_092D_DD="Logitech QuickCam Express/Go"
+PID_092E_DD="Logitech QuickCam Chat"
+PID_092F_DD="Logitech QuickCam Express/Go"
+LVfWWDMDriverDesc="Logitech USB Video Camera"
+DCA500ACONTROL="Software\CA561B\CA500ACONTROL"
+DVIDEOPROCAMP="Software\CA561B\VIDEOPROCAMP"
+FILTER_NAME="{9b365890-165f-11d0-a195-0020afd156e4}"
+CLSID_PropSet_LVCam_PPages="{38760DCD-13F4-4a73-8802-520C31143999}"
+CLSID_PropSet_8116_PPages="{2d04fd49-e88b-4d51-bd09-4dfb6d26a460}"
+CLSID_PP_Advanced="{1159F2AF-F989-4d11-8B34-9550029269BB}"
+CLSID_PP_Advanced_Desc="Advanced properties"
+CLSID_PP_Status="{09AC4892-81B7-4d39-B235-8F0DB0DAF4F8}"
+CLSID_PP_Status_Desc="Status"
+CLSID_PP_Device="{0932B8A4-BBB4-4bc0-A8AB-91C626950C75}"
+CLSID_PP_Device_Desc="Device Settings"
+CLSID_PP_Troubleshooting="{517539A3-905F-4755-9F94-D91B095A07CC}"
+CLSID_PP_Troubleshooting_Desc="Troubleshooting"
+CLSID_PP_Traffic="{DE7371F4-4CCD-47cd-B12B-8887C9125895}"
+CLSID_PP_Traffic_Desc="USB Traffic"
+CLSID_PP_Debug="{5872C980-0AAF-4cdb-A62D-4F453DA2EFAD}"
+CLSID_PP_Debug_Desc="Debug"
+CLSID_PP_Registers="{4C8DD17E-7079-4c7e-96E5-A7AFDB12F132}"
+CLSID_PP_Registers_Desc="Registers"
+CLSID_PP_Bandwidth="{4FE8FFE1-FCCA-49c4-A363-525AB7C5B7CF}"
+CLSID_PP_Bandwidth_Desc="Bandwidth Control"
+AMD64_WOW6432CLSIDNODE="SOFTWARE\Wow6432Node\Classes\CLSID"
+KEY_CONFERENCING="Software\Microsoft\Conferencing\CaptureDevices"
+lvcoinst32="lvci1110.dll"
+lvcoinst64="lvco1110.dll"
+
+[Strings.0411]
+PVD="Logicool"
+LogitechMfg="Logicool"
+DISK_NAME="Logicool USB Video Camera Disk"
+PID_0928_DD="Logicool Qcam Express"
+PID_092D_DD="Logicool Qcam Express/Go"
+PID_092E_DD="Logicool Qcam Chat"
+PID_092F_DD="Logicool Qcam Express/Go"
+LVfWWDMDriverDesc="Logicool USB Video Camera"
+lvcoinst32="lvci1110.dll"
+lvcoinst64="lvco1110.dll"
+ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+SERVICE_KERNEL_DRIVER=1
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+MMDrivers="Software\Microsoft\Windows NT\CurrentVersion\Drivers32"
+MedSets="SYSTEM\CurrentControlSet\Control\MediaSets"
+ExtensionDLL = "LVUI2.dll"
+ExtensionDLL64 = "LVUI64.dll"
+DualCamApp="Qsync.exe"
+QuickSyncApp="Qsync.exe"
+QuickSyncArg="/QuickSync"
+ICM_Prfl="sRGB Color Space Profile.icm"
+REG_APPS="Software\Logitech\LVComS\CurrentVersion\RegisteredApplications\{D2B479C0-C3F2-11D1-B014-00AA00CF90F9}"
+QC_DRVS="Software\Logitech\QuickCam\Drivers"
+DCA500ACONTROL="Software\CA561B\CA500ACONTROL"
+DVIDEOPROCAMP="Software\CA561B\VIDEOPROCAMP"
+FILTER_NAME="{9b365890-165f-11d0-a195-0020afd156e4}"
+CLSID_PropSet_LVCam_PPages="{38760DCD-13F4-4a73-8802-520C31143999}"
+CLSID_PropSet_8116_PPages="{2d04fd49-e88b-4d51-bd09-4dfb6d26a460}"
+CLSID_PP_Advanced="{1159F2AF-F989-4d11-8B34-9550029269BB}"
+CLSID_PP_Advanced_Desc="Advanced properties"
+CLSID_PP_Status="{09AC4892-81B7-4d39-B235-8F0DB0DAF4F8}"
+CLSID_PP_Status_Desc="Status"
+CLSID_PP_Device="{0932B8A4-BBB4-4bc0-A8AB-91C626950C75}"
+CLSID_PP_Device_Desc="Device Settings"
+CLSID_PP_Troubleshooting="{517539A3-905F-4755-9F94-D91B095A07CC}"
+CLSID_PP_Troubleshooting_Desc="Troubleshooting"
+CLSID_PP_Traffic="{DE7371F4-4CCD-47cd-B12B-8887C9125895}"
+CLSID_PP_Traffic_Desc="USB Traffic"
+CLSID_PP_Debug="{5872C980-0AAF-4cdb-A62D-4F453DA2EFAD}"
+CLSID_PP_Debug_Desc="Debug"
+CLSID_PP_Registers="{4C8DD17E-7079-4c7e-96E5-A7AFDB12F132}"
+CLSID_PP_Registers_Desc="Registers"
+CLSID_PP_Bandwidth="{4FE8FFE1-FCCA-49c4-A363-525AB7C5B7CF}"
+CLSID_PP_Bandwidth_Desc="Bandwidth Control"
+AMD64_WOW6432CLSIDNODE="SOFTWARE\Wow6432Node\Classes\CLSID"
+KEY_CONFERENCING="Software\Microsoft\Conferencing\CaptureDevices"
+
+
+
