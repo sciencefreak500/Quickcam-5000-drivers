@@ -19,7 +19,7 @@ DriverVer=07/18/2007, 11.1.0.2016
 [Logitech]
 %PID_08C2_DD%=PID_08C2,USB\VID_046D&PID_08C2&Mi_00      ; V3 - Orbit
 %PID_08C3_DD%=PID_08C3,USB\VID_046D&PID_08C3&Mi_00      ; Adams - Notebooks Pro
-%PID_08C5_DD%=PID_08C5,USB\VID_046D&PID_08C5&Mi_00      ; Zinc - Pro 5000
+%PID_08C7_DD%=PID_08C7,USB\VID_046D&PID_08C7&Mi_00      ; Zinc - Pro 5000
 %PID_09C0_DD%=PID_08C6,USB\VID_046D&PID_09C0&Mi_00      ; Scooby 2
 %PID_08C9_DD%=PID_08C9,USB\VID_046D&PID_08C9&Mi_00      ; Wonder Woman
 %PID_08CA_DD%=PID_08CA,USB\VID_046D&PID_08CA&Mi_00      ; Cambay2
@@ -35,7 +35,7 @@ DriverVer=07/18/2007, 11.1.0.2016
 [Logitech.NT]
 %PID_08C2_DD%=PID_08C2.XP,USB\VID_046D&PID_08C2&Mi_00   ; V3 - Orbit
 %PID_08C3_DD%=PID_08C3.XP,USB\VID_046D&PID_08C3&Mi_00   ; Adams - Notebooks Pro
-%PID_08C5_DD%=PID_08C5.XP,USB\VID_046D&PID_08C5&Mi_00   ; Zinc - Pro 5000
+%PID_08C7_DD%=PID_08C7.XP,USB\VID_046D&PID_08C7&Mi_00   ; Zinc - Pro 5000
 %PID_09C0_DD%=PID_08C6.XP,USB\VID_046D&PID_09C0&Mi_00   ; Scooby 2
 %PID_08C9_DD%=PID_08C9.XP,USB\VID_046D&PID_08C9&Mi_00   ; Wonder Woman
 %PID_08CA_DD%=PID_08CA.XP,USB\VID_046D&PID_08CA&Mi_00   ; Cambay2
@@ -51,7 +51,7 @@ DriverVer=07/18/2007, 11.1.0.2016
 [Logitech.NTamd64]
 %PID_08C2_DD%=PID_08C2.XPAMD64,USB\VID_046D&PID_08C2&Mi_00      ; V3 - Orbit
 %PID_08C3_DD%=PID_08C3.XPAMD64,USB\VID_046D&PID_08C3&Mi_00      ; Adams - Notebooks Pro
-%PID_08C5_DD%=PID_08C5.XPAMD64,USB\VID_046D&PID_08C5&Mi_00      ; Zinc - Pro 5000
+%PID_08C7_DD%=PID_08C7.XPAMD64,USB\VID_046D&PID_08C7&Mi_00      ; Zinc - Pro 5000
 %PID_08C9_DD%=PID_08C9.XPAMD64,USB\VID_046D&PID_08C9&Mi_00      ; Wonder Woman
 %PID_08CA_DD%=PID_08CA.XPAMD64,USB\VID_046D&PID_08CA&Mi_00      ; Cambay2
 %PID_08CB_DD%=PID_08CB.XPAMD64,USB\VID_046D&PID_08CB&Mi_00      ; Adams2
@@ -67,7 +67,7 @@ DriverVer=07/18/2007, 11.1.0.2016
 [Logitech.NT.6.0]
 %PID_08C2_DD%=PID_08C2.VISTA,USB\VID_046D&PID_08C2&Mi_00    ; V3 - Orbit
 %PID_08C3_DD%=PID_08C3.VISTA,USB\VID_046D&PID_08C3&Mi_00    ; Adams
-%PID_08C5_DD%=PID_08C5.VISTA,USB\VID_046D&PID_08C5&Mi_00    ; Zinc - Pro 5000
+%PID_08C7_DD%=PID_08C7.VISTA,USB\VID_046D&PID_08C7&Mi_00    ; Zinc - Pro 5000
 %PID_08C9_DD%=PID_08C9.VISTA,USB\VID_046D&PID_08C9&Mi_00    ; Wonder Woman
 %PID_08CA_DD%=PID_08CA.VISTA,USB\VID_046D&PID_08CA&Mi_00    ; Cambay2
 %PID_08CB_DD%=PID_08CB.VISTA,USB\VID_046D&PID_08CB&Mi_00    ; Adams2
@@ -83,7 +83,7 @@ DriverVer=07/18/2007, 11.1.0.2016
 [Logitech.NTamd64.6.0]
 %PID_08C2_DD%=PID_08C2.XPAMD64,USB\VID_046D&PID_08C2&Mi_00  ; V3 - Orbit
 %PID_08C3_DD%=PID_08C3.XPAMD64,USB\VID_046D&PID_08C3&Mi_00  ; Adams - Notebooks Pro
-%PID_08C5_DD%=PID_08C5.XPAMD64,USB\VID_046D&PID_08C5&Mi_00  ; Zinc - Pro 5000
+%PID_08C7_DD%=PID_08C7.XPAMD64,USB\VID_046D&PID_08C7&Mi_00  ; Zinc - Pro 5000
 %PID_08C9_DD%=PID_08C9.XPAMD64,USB\VID_046D&PID_08C9&Mi_00  ; Wonder Woman
 %PID_08CA_DD%=PID_08CA.XPAMD64,USB\VID_046D&PID_08CA&Mi_00  ; Cambay2
 %PID_08CB_DD%=PID_08CB.XPAMD64,USB\VID_046D&PID_08CB&Mi_00  ; Adams2
@@ -541,15 +541,15 @@ E0,9C,BD,70,7C,D0,64,40,38,55,99,1E,B4,5B,04,29,1D,B2,89,4E, \
 75,1C,AE,EE
 HKR,,FriendlyName,,%PID_08C3_DD%
 
-[PID_08C5]
+[PID_08C7]
 Include=    ks.inf, kscaptur.inf, ksfilter.inf
 Needs=      KS.Registration,KSCAPTUR.Registration
-AddReg=     PID_08C5.AddReg, VFW.AddReg, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration
+AddReg=     PID_08C7.AddReg, VFW.AddReg, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration
 DelFiles=   DelDrivers, LVfWWDM32.DelFile
 CopyFiles=  LVUVC.CopyDrivers, MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrv, LVUI.CopyFiles,CopyCoInstaller
 DelReg=     Win95.DelReg
 UpdateInis= Win95.UpdateIni, LVfWWDM.UpdateIni
-VendorSetup=%lvcoinst32%,SetupEntryPoint PID_08C5
+VendorSetup=%lvcoinst32%,SetupEntryPoint PID_08C7
 SubClass=StillImage
 DeviceType=3
 DeviceSubType=0x1
@@ -558,20 +558,20 @@ DeviceData=QuickCam.DeviceData
 ICMProfiles=%ICM_Prfl%
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID_08C5.NT]
+[PID_08C7.NT]
 Include=    ks.inf, kscaptur.inf, ksfilter.inf, dshowext.inf
 Needs=      KS.Registration,KSCAPTUR.Registration.NT, DSHOWEXT.Registration
-AddReg=     FTRep.AddReg, PID_08C5.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
+AddReg=     FTRep.AddReg, PID_08C7.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
 CopyFiles=  WUAPP32.Files,LVUVC.CopyDrivers, MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID_08C5.NT.HW]
-AddReg=VFRep08C5.AddReg
+[PID_08C7.NT.HW]
+AddReg=VFRep08C7.AddReg
 
-[PID_08C5.XP]
+[PID_08C7.XP]
 Include=    ks.inf, kscaptur.inf, ksfilter.inf, dshowext.inf
 Needs=      KS.Registration,KSCAPTUR.Registration.NT, DSHOWEXT.Registration
-AddReg=     FTRep.AddReg, PID_08C5.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
+AddReg=     FTRep.AddReg, PID_08C7.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
 CopyFiles=  WUAPP32.Files,LVUVC.CopyDrivers, MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
 SubClass=StillImage
 DeviceType=3
@@ -581,13 +581,13 @@ DeviceData=QuickCam.DeviceData
 ICMProfiles=%ICM_Prfl%
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID_08C5.XP.HW]
-AddReg=VFRep08C5.AddReg
+[PID_08C7.XP.HW]
+AddReg=VFRep08C7.AddReg
 
-[PID_08C5.VISTA]
+[PID_08C7.VISTA]
 Include=    ks.inf, kscaptur.inf
 Needs=      KS.Registration,KSCAPTUR.Registration.NT
-AddReg=     FTRep.AddReg, PID_08C5.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
+AddReg=     FTRep.AddReg, PID_08C7.AddReg, VFW.AddReg.NT, Common.AddReg,LVCAM2_Prop.AddReg,LVCam2_Prop_BW.AddReg,LVCam2_Prop_PTZ.AddReg,LTopologyNodeRegistration, LVSELSUSDisable.AddReg
 CopyFiles=  WUAPP32.Files,LVUVC.CopyDrivers, MSVCR.OS.Files,MISC.CopyFiles, CopyUserDrvNT, LVUI.CopyFiles,USBMonitor.CopyFiles
 SubClass=StillImage
 DeviceType=3
@@ -597,13 +597,13 @@ DeviceData=QuickCam.DeviceData
 ICMProfiles=%ICM_Prfl%
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID_08C5.VISTA.HW]
-AddReg=VFRep08C5.AddReg
+[PID_08C7.VISTA.HW]
+AddReg=VFRep08C7.AddReg
 
-[PID_08C5.XPAMD64]
+[PID_08C7.XPAMD64]
 Include=    ks.inf, kscaptur.inf, ksfilter.inf, dshowext.inf
 Needs=      KS.Registration,KSCAPTUR.Registration.NT, DSHOWEXT.Registration
-AddReg=     FTRep.AddReg, PID_08C5_X64.AddReg, VFW.AddReg.NT, Common.AddReg,LVCam2_Prop_PTZ_AMD64.AddReg,LVCam2_Prop_PTZ_X64.AddReg,LVCam2_Prop_BW_X64.AddReg, LVCam2_Prop_BW_AMD64.AddReg,LTopologyNodeRegistration, LVCAM2_Prop_X64.AddReg, LVCAM2_Prop_AMD64.AddReg, LVSELSUSDisable.AddReg
+AddReg=     FTRep.AddReg, PID_08C7_X64.AddReg, VFW.AddReg.NT, Common.AddReg,LVCam2_Prop_PTZ_AMD64.AddReg,LVCam2_Prop_PTZ_X64.AddReg,LVCam2_Prop_BW_X64.AddReg, LVCam2_Prop_BW_AMD64.AddReg,LTopologyNodeRegistration, LVCAM2_Prop_X64.AddReg, LVCAM2_Prop_AMD64.AddReg, LVSELSUSDisable.AddReg
 CopyFiles=  WUAPP64.Files,LVUVC.CopyDrivers_AMD64,MSVCR_X64.OS.Files,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64,LVUI.CopyFiles_AMD64_WOW6432,USBMonitor_X64.CopyFiles
 SubClass=StillImage
 DeviceType=3
@@ -613,83 +613,83 @@ DeviceData=QuickCam.DeviceData
 ICMProfiles=%ICM_Prfl%
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID_08C5.XPAMD64.HW]
-AddReg=VFRep08C5.AddReg
+[PID_08C7.XPAMD64.HW]
+AddReg=VFRep08C7.AddReg
 
-[PID_08C5.NT.CoInstallers]
+[PID_08C7.NT.CoInstallers]
 CopyFiles=CopyCoInstaller
 AddReg=CoInstaller.AddReg
 
-[PID_08C5.XP.CoInstallers]
+[PID_08C7.XP.CoInstallers]
 CopyFiles=CopyCoInstaller
 AddReg=CoInstaller.AddReg
 
-[PID_08C5.VISTA.CoInstallers]
+[PID_08C7.VISTA.CoInstallers]
 CopyFiles=CopyCoInstaller
 AddReg=CoInstaller.AddReg
 
-[PID_08C5.XPAMD64.CoInstallers]
+[PID_08C7.XPAMD64.CoInstallers]
 CopyFiles=CopyCoInstaller_X64
 AddReg=CoInstaller_X64.AddReg
 
-[PID_08C5.NT.Interfaces]
-AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
-AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
+[PID_08C7.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
+AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
 
-[PID_08C5.XP.Interfaces]
-AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
-AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
+[PID_08C7.XP.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
+AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
 
-[PID_08C5.VISTA.Interfaces]
-AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
-AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
+[PID_08C7.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
+AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
 
-[PID_08C5.XPAMD64.Interfaces]
-AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
-AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C5.Interface.NT
+[PID_08C7.XPAMD64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
+AddInterface=%KSCATEGORY_VIDEO%,%LVUVC_CAP_FILTER%,PID_08C7.Interface.NT
 
-[PID_08C5.Interface.NT]
-AddReg=PID_08C5.Intf.AddReg.NT
+[PID_08C7.Interface.NT]
+AddReg=PID_08C7.Intf.AddReg.NT
 
-[PID_08C5.Intf.AddReg.NT]
+[PID_08C7.Intf.AddReg.NT]
 HKR,,CLSID,,%ProxyVCap.CLSID%
-HKR,,FriendlyName,,%PID_08C5_DD%
+HKR,,FriendlyName,,%PID_08C7_DD%
 HKR,,ExtensionDLL,,%ExtensionDLL%
 HKR,PageAliases,"{71F96464-78F3-11d0-A18C-00A0C9118956}",1,21,E8,C2,3D, 13,47, d2,11, 0xba, 0x41, 0x0, 0xa0, 0xc9, 0xd, 0x2b, 0x5
 HKR,PinFactory\1\Interfaces\{5BB95400-52BB-11d2-BA41-00A0C90D2B05}
 HKR,,RTCFlags,0x00010001,0x00000010
 
-[PID_08C5.NT.Services]
-AddService = LVUVC,0x00000002,PID_08C5.ServiceInstall
+[PID_08C7.NT.Services]
+AddService = LVUVC,0x00000002,PID_08C7.ServiceInstall
 AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
 
-[PID_08C5.XP.Services]
-AddService = LVUVC,0x00000002,PID_08C5.ServiceInstall
+[PID_08C7.XP.Services]
+AddService = LVUVC,0x00000002,PID_08C7.ServiceInstall
 AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
 
-[PID_08C5.VISTA.Services]
-AddService = LVUVC,0x00000002,PID_08C5.ServiceInstall
+[PID_08C7.VISTA.Services]
+AddService = LVUVC,0x00000002,PID_08C7.ServiceInstall
 AddService = LVUSBSta,0x00000000,USBMonitor.ServiceInstall
 
-[PID_08C5.XPAMD64.Services]
-AddService = LVUVC64,0x00000002,PID_08C5_X64.ServiceInstall
+[PID_08C7.XPAMD64.Services]
+AddService = LVUVC64,0x00000002,PID_08C7_X64.ServiceInstall
 AddService = LVUSBS64,0x00000000,USBMonitor_X64.ServiceInstall
 
-[PID_08C5.ServiceInstall]
-DisplayName   = %PID_08C5_DD%(UVC)
+[PID_08C7.ServiceInstall]
+DisplayName   = %PID_08C7_DD%(UVC)
 ServiceType   = %SERVICE_KERNEL_DRIVER%
 StartType     = %SERVICE_DEMAND_START%
 ErrorControl  = %SERVICE_ERROR_NORMAL%
 ServiceBinary = %12%\lvuvc.sys
 
-[PID_08C5_X64.ServiceInstall]
-DisplayName   = %PID_08C5_DD%(UVC)
+[PID_08C7_X64.ServiceInstall]
+DisplayName   = %PID_08C7_DD%(UVC)
 ServiceType   = %SERVICE_KERNEL_DRIVER%
 StartType     = %SERVICE_DEMAND_START%
 ErrorControl  = %SERVICE_ERROR_NORMAL%
 ServiceBinary = %12%\lvuvc64.sys
 
-[PID_08C5.AddReg]
+[PID_08C7.AddReg]
 HKR,,DevLoader,,*ntkern
 HKR,,NTMPDriver,,lvuvc.sys
 HKR,,PageOutWhenUnopened,3,00
@@ -699,16 +699,16 @@ HKR,Settings,"UseSVF",0x00010001,1
 HKR,Settings,"UseFEL",0x00010001,1
 HKR,Settings,"MechPT",0x00010001,0
 HKR,Settings,"TrackType",0x00010001,0
-HKR,,FriendlyName,,%PID_08C5_DD%
+HKR,,FriendlyName,,%PID_08C7_DD%
 HKR,,LVFunctions,0x10001,0x03
 HKR,,LVFeatures,0x10001,0x00
 HKR,,LVCategories,0x10001,0x1121
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwImageSize,0x1,00,05,40,06
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwStreamingMode,0x1,01,00,00,00
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwDialogs,0x1,02,00,00,00
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwNumColors,0x1,28,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwImageSize,0x1,00,05,40,06
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwStreamingMode,0x1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwDialogs,0x1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwNumColors,0x1,28,00,00,00
 
-[PID_08C5_X64.AddReg]
+[PID_08C7_X64.AddReg]
 HKR,,DevLoader,,*ntkern
 HKR,,NTMPDriver,,lvuvc64.sys
 HKR,,PageOutWhenUnopened,3,00
@@ -718,16 +718,16 @@ HKR,Settings,"UseSVF",0x00010001,1
 HKR,Settings,"UseFEL",0x00010001,1
 HKR,Settings,"MechPT",0x00010001,0
 HKR,Settings,"TrackType",0x00010001,0
-HKR,,FriendlyName,,%PID_08C5_DD%
+HKR,,FriendlyName,,%PID_08C7_DD%
 HKR,,LVFunctions,0x10001,0x03
 HKR,,LVFeatures,0x10001,0x00
 HKR,,LVCategories,0x10001,0x1121
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwImageSize,0x1,00,05,40,06
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwStreamingMode,0x1,01,00,00,00
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwDialogs,0x1,02,00,00,00
-HKLM,"%KEY_CONFERENCING%\%PID_08C5_DD%",dwNumColors,0x1,28,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwImageSize,0x1,00,05,40,06
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwStreamingMode,0x1,01,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwDialogs,0x1,02,00,00,00
+HKLM,"%KEY_CONFERENCING%\%PID_08C7_DD%",dwNumColors,0x1,28,00,00,00
 
-[VFRep08C5.AddReg]
+[VFRep08C7.AddReg]
 HKR,,VFRep,0x00001, \
 09,CC,C0,A7,BD,55,1B,41,FE,A0,AF,ED,2E,D5,9D,2D,AD,88,34,35, \
 4F,00,73,C3,F2,AA,D9,4A,DA,4C,68,35,11,63,11,F2,EF,6D,38,60, \
@@ -744,7 +744,7 @@ FB,6C,B0,47,72,BC,A9,C5,8A,39,52,AB,7F,1B,50,C7,2D,30,B4,0B, \
 E4,CC,71,B0,2A,B3,2D,36,33,2D,07,77,4F,27,78,D2,2F,B0,41,1A, \
 B3,8D,55,97,B1,CC,68,1A,40,A5,DB,FA,7A,87,1E,55,22,CC,C2,A0, \
 8B,38,19,C1,4F,9A,6F,37,FB,05,41,F4,AA,88,3F,9D,CF,B8,7C,7A
-HKR,,FriendlyName,,%PID_08C5_DD%
+HKR,,FriendlyName,,%PID_08C7_DD%
 
 [PID_08C6]
 Include=    ks.inf, kscaptur.inf, ksfilter.inf
@@ -3337,7 +3337,7 @@ WUApp64.exe
 DelFiles = WUAPP32.Files,LVUVC.CopyDrivers,MISC.CopyFiles,CopyUserDrvNT,LVUI.CopyFiles,USBMonitor.CopyFiles,CopyCoInstaller,WUAPP64.Files,LVUVC.CopyDrivers_AMD64,CopyUserDrvNT_AMD64,CopyUserDrvNT_AMD64_WOW6432,LVUI.CopyFiles_AMD64,LVUI.CopyFiles_AMD64_WOW6432, \
  USBMonitor_X64.CopyFiles,CopyCoInstaller_X64,CopyUserDrv
 DelReg   = pid_08c2.addreg,vfw.addreg.nt,lvcam2_prop.addreg,lvcam2_prop_bw.addreg,lvcam2_prop_ptz.addreg,ltopologynoderegistration,vfrep08c2.addreg,pid_08c2_x64.addreg,lvcam2_prop_ptz_amd64.addreg,lvcam2_prop_ptz_x64.addreg,lvcam2_prop_bw_x64.addreg,\
- lvcam2_prop_bw_amd64.addreg,lvcam2_prop_x64.addreg,lvcam2_prop_amd64.addreg,pid_08c3.addreg,vfrep08c3.addreg,pid_08c3_x64.addreg,pid_08c5.addreg,vfrep08c5.addreg,pid_08c5_x64.addreg,pid_08c9.addreg,vfrep08c9.addreg,pid_08c9_x64.addreg,pid_08ca.addreg,\
+ lvcam2_prop_bw_amd64.addreg,lvcam2_prop_x64.addreg,lvcam2_prop_amd64.addreg,pid_08c3.addreg,vfrep08c3.addreg,pid_08c3_x64.addreg,pid_08C7.addreg,vfrep08C7.addreg,pid_08C7_x64.addreg,pid_08c9.addreg,vfrep08c9.addreg,pid_08c9_x64.addreg,pid_08ca.addreg,\
  vfrep08ca.addreg,pid_08ca_x64.addreg,pid_08cb.addreg,vfrep08cb.addreg,pid_08cb_x64.addreg,pid_08cc.addreg,vfrep08cc.addreg,pid_08cc_x64.addreg,pid_08ce.addreg,vfrep08ce.addreg,pid_08ce_x64.addreg,pid_08c6.addreg,vfrep08c6.addreg,pid_08c6_x64.addreg,pid_09c1.addreg,\
  vfrep09c1.addreg,pid_09c1_x64.addreg,pid_0990.addreg,vfrep0990.addreg,pid_0990_x64.addreg,pid_0992.addreg,vfrep0992.addreg,pid_0992_x64.addreg,pid_0991.addreg,vfrep0991.addreg,pid_0991_x64.addreg,pid_0994.addreg,vfrep0994.addreg,pid_0994_x64.addreg
 
@@ -3368,7 +3368,7 @@ DISK_NAME="Logitech USB Video Camera Disk"
 PID_08C1_DD="Logitech QuickCam Fusion"
 PID_08C2_DD="QuickCam Orbit/Sphere MP"
 PID_08C3_DD="QuickCam for Notebooks Pro"
-PID_08C5_DD="Logitech QuickCam Pro 5000"
+PID_08C7_DD="Logitech QuickCam Pro 5000"
 PID_08C6_DD="QuickCam for Dell Notebooks"
 PID_08C9_DD="Logitech QuickCam Ultra Vision"
 PID_08CA_DD="Logitech QuickCam Fusion"
@@ -3423,7 +3423,7 @@ DISK_NAME="Logicool USB Video Camera Disk"
 PID_08C1_DD="Logicool Qcam Fusion"
 PID_08C2_DD="Qcam Orbit/Sphere MP"
 PID_08C3_DD="Qcam for Notebooks Pro"
-PID_08C5_DD="Logicool Qcam Pro 5000"
+PID_08C7_DD="Logicool Qcam Pro 5000"
 PID_08C6_DD="Qcam for Dell Notebooks"
 PID_08C9_DD="Logicool Qcam Ultra Vision"
 PID_08CA_DD="Logicool Qcam Fusion"

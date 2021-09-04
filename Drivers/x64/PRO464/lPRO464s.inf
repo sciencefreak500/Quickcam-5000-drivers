@@ -41,8 +41,8 @@ WUApp64.exe=1
 %USB\VID_046D&PID_08C2.DeviceDesc%=PCM2USB.PID08C2,USB\Vid_046d&Pid_08C2&MI_02           ; Orbit
 %USB\VID_046D&PID_08C3.DeviceDesc%=PCM2USB.PID08C3,USB\Vid_046d&Pid_08C3&MI_01           ; Notebooks Pro
 %USB\VID_046D&PID_08C3.DeviceDesc%=PCM2USB.PID08C3,USB\Vid_046d&Pid_08C3&MI_02           ; Notebooks Pro
-%USB\VID_046D&PID_08C5.DeviceDesc%=PCM2USB.PID08C5,USB\Vid_046d&Pid_08C5&MI_01           ; Zoom
-%USB\VID_046D&PID_08C5.DeviceDesc%=PCM2USB.PID08C5,USB\Vid_046d&Pid_08C5&MI_02           ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PCM2USB.PID08C7,USB\Vid_046d&Pid_08C7&MI_01           ; Zoom
+%USB\VID_046D&PID_08C7.DeviceDesc%=PCM2USB.PID08C7,USB\Vid_046d&Pid_08C7&MI_02           ; QuickCam Pro 5000
 %USB\VID_046D&PID_09C0.DeviceDesc%=PCM2USB.PID08C6,USB\Vid_046d&Pid_09C0&MI_01           ; Scooby 2
 %USB\VID_046D&PID_09C0.DeviceDesc%=PCM2USB.PID08C6,USB\Vid_046d&Pid_09C0&MI_02           ; Scooby 2
 %USB\VID_046D&PID_08C9.DeviceDesc%=PCM2USB.PID08C9,USB\Vid_046d&Pid_08C9&MI_01           ; Wonder Woman
@@ -71,8 +71,8 @@ WUApp64.exe=1
 %USB\VID_046D&PID_08C2.DeviceDesc%=PID08C2.NTX64,USB\Vid_046d&Pid_08C2&MI_02             ; V3 - Orbit
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.NTX64,USB\Vid_046d&Pid_08C3&MI_01             ; Adams - Notebooks Pro
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.NTX64,USB\Vid_046d&Pid_08C3&MI_02             ; Adams - Notebooks Pro
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.NTX64,USB\Vid_046d&Pid_08C5&MI_01             ; QuickCam Pro 5000
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.NTX64,USB\Vid_046d&Pid_08C5&MI_02             ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.NTX64,USB\Vid_046d&Pid_08C7&MI_01             ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.NTX64,USB\Vid_046d&Pid_08C7&MI_02             ; QuickCam Pro 5000
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.NTX64,USB\Vid_046d&Pid_09C0&MI_01             ; Scooby 2
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.NTX64,USB\Vid_046d&Pid_09C0&MI_02             ; Scooby 2
 %USB\VID_046D&PID_08C9.DeviceDesc%=PID08C9.NTX64,USB\Vid_046d&Pid_08C9&MI_01           ; Wonder Woman
@@ -101,8 +101,8 @@ WUApp64.exe=1
 %USB\VID_046D&PID_08C2.DeviceDesc%=PID08C2.VISTA,USB\Vid_046d&Pid_08C2&MI_02             ; V3 - Orbit
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.VISTA,USB\Vid_046d&Pid_08C3&MI_01             ; Adams - Notebooks Pro
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.VISTA,USB\Vid_046d&Pid_08C3&MI_02             ; Adams - Notebooks Pro
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.VISTA,USB\Vid_046d&Pid_08C5&MI_01             ; QuickCam Pro 5000
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.VISTA,USB\Vid_046d&Pid_08C5&MI_02             ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.VISTA,USB\Vid_046d&Pid_08C7&MI_01             ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.VISTA,USB\Vid_046d&Pid_08C7&MI_02             ; QuickCam Pro 5000
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.VISTA,USB\Vid_046d&Pid_09C0&MI_01           ; Scooby 2
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.VISTA,USB\Vid_046d&Pid_09C0&MI_02           ; Scooby 2
 %USB\VID_046D&PID_08C9.DeviceDesc%=PID08C9.VISTA,USB\Vid_046d&Pid_08C9&MI_01           ; Wonder Woman
@@ -131,8 +131,8 @@ WUApp64.exe=1
 %USB\VID_046D&PID_08C2.DeviceDesc%=PID08C2.VISTAX64,USB\Vid_046d&Pid_08C2&MI_02           ; V3 - Orbit
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.VISTAX64,USB\Vid_046d&Pid_08C3&MI_01           ; Adams - Notebooks Pro
 %USB\VID_046D&PID_08C3.DeviceDesc%=PID08C3.VISTAX64,USB\Vid_046d&Pid_08C3&MI_02           ; Adams - Notebooks Pro
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.VISTAX64,USB\Vid_046d&Pid_08C5&MI_01           ; QuickCam Pro 5000
-%USB\VID_046D&PID_08C5.DeviceDesc%=PID08C5.VISTAX64,USB\Vid_046d&Pid_08C5&MI_02           ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.VISTAX64,USB\Vid_046d&Pid_08C7&MI_01           ; QuickCam Pro 5000
+%USB\VID_046D&PID_08C7.DeviceDesc%=PID08C7.VISTAX64,USB\Vid_046d&Pid_08C7&MI_02           ; QuickCam Pro 5000
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.VISTAX64,USB\Vid_046d&Pid_09C0&MI_01           ; Scooby 2
 %USB\VID_046D&PID_09C0.DeviceDesc%=PID08C6.VISTAX64,USB\Vid_046d&Pid_09C0&MI_02           ; Scooby 2
 %USB\VID_046D&PID_08C9.DeviceDesc%=PID08C9.VISTAX64,USB\Vid_046d&Pid_08C9&MI_01           ; Wonder Woman
@@ -426,119 +426,119 @@ AddService = lvpopf64,0x00000000,lvpopf64_Service
 CopyFiles=CopyCoInstaller_X64
 AddReg=CoInstaller_X64.AddReg
 
-[PCM2USB.PID08C5]
+[PCM2USB.PID08C7]
 Include=ks.inf, wdmaudio.inf, wdma_usb.inf
 Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
 AddReg=PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg
 CopyFiles=lvPopflt.CopySys
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PCM2USB.PID08C5.NT]
+[PCM2USB.PID08C7.NT]
 Include=ks.inf, wdmaudio.inf, wdma_usb.inf
 Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
-AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C5, RecordDevice.AddReg.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C7, RecordDevice.AddReg.NT
 CopyFiles=WUAPP32.Files,USBMonitor.CopyFiles,lvPopflt.CopySys
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PCM2USB.PID08C5.NT.HW]
+[PCM2USB.PID08C7.NT.HW]
 AddReg=AddPOPLowerFilter.NT
 
-[PID08C5.NTX64]
+[PID08C7.NTX64]
 Include=ks.inf, wdmaudio.inf, wdma_usb.inf
 Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
-AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C5, RecordDevice.AddReg.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C7, RecordDevice.AddReg.NT
 CopyFiles=WUAPP64.Files,USBMonitor64.CopyFiles, lvPopf64.CopySys
 
-[PID08C5.NTX64.HW]
+[PID08C7.NTX64.HW]
 AddReg=AddPOPLowerFilter.NTX64
 
-[PID08C5.VISTA]
+[PID08C7.VISTA]
 Include=ks.inf, wdmaudio.inf, wdma_usb.inf
 Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
-AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C5, RecordDevice.AddReg.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C7, RecordDevice.AddReg.NT
 CopyFiles=WUAPP32.Files,USBMonitor.CopyFiles, lvPopflt.CopySys
 DriverVer=07/18/2007, 11.1.0.2016
 
-[PID08C5.VISTA.HW]
+[PID08C7.VISTA.HW]
 AddReg=AddPOPLowerFilter.NT
 
-[PID08C5.VISTAX64]
+[PID08C7.VISTAX64]
 Include=ks.inf, wdmaudio.inf, wdma_usb.inf
 Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
-AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C5, RecordDevice.AddReg.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID08C7, RecordDevice.AddReg.NT
 CopyFiles=WUAPP64.Files,USBMonitor64.CopyFiles, lvPopf64.CopySys
 
-[PID08C5.VISTAX64.HW]
+[PID08C7.VISTAX64.HW]
 AddReg=AddPOPLowerFilter.NTX64
 
-[RecordDevice.AddReg.PID08C5]
-HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_08C5.DeviceDesc%
-HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_08C5.DeviceDesc%
+[RecordDevice.AddReg.PID08C7]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_08C7.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_08C7.DeviceDesc%
 
-[PCM2USB.PID08C5.NT.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C5.Interface,
+[PCM2USB.PID08C7.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C7.Interface,
 
-[PID08C5.NTX64.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C5.Interface,
+[PID08C7.NTX64.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C7.Interface,
 
-[PID08C5.VISTA.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C5.Interface,
+[PID08C7.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C7.Interface,
 
-[PID08C5.VISTAX64.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C5.Interface,
-AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C5.Interface,
+[PID08C7.VISTAX64.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID08C7.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID08C7.Interface,
 
-[PCM2USB.PID08C5.Interface]
-AddReg=PCM2USB.PID08C5.Int.Addreg
+[PCM2USB.PID08C7.Interface]
+AddReg=PCM2USB.PID08C7.Int.Addreg
 
-[PCM2USB.PID08C5.Int.AddReg]
+[PCM2USB.PID08C7.Int.AddReg]
 HKR,,CurveType,1,01,00,00,00
-HKR,,FriendlyName,,%USB\VID_046D&PID_08C5.DeviceDesc%
+HKR,,FriendlyName,,%USB\VID_046D&PID_08C7.DeviceDesc%
 HKR,,CLSID,,%Proxy.CLSID%
 HKR,,LVFunctions,0x10001,0x03
 HKR,,LVFeatures,0x10001,0x00
 HKR,,LVCategories,0x10001,0x1141
 
-[PCM2USB.PID08C5.NT.Services]
+[PCM2USB.PID08C7.NT.Services]
 Include=wdma_usb.inf
 Needs=USBAudio.NT.Services
 AddService = lvpopflt,0x00000000,lvpopflt_Service
 
-[PCM2USB.PID08C5.NT.CoInstallers]
+[PCM2USB.PID08C7.NT.CoInstallers]
 CopyFiles=CopyCoInstaller
 AddReg=CoInstaller.AddReg
 
-[PID08C5.NTX64.Services]
+[PID08C7.NTX64.Services]
 Include=wdma_usb.inf
 Needs=USBAudio.NT.Services
 AddService = lvpopf64,0x00000000,lvpopf64_Service
 
-[PID08C5.NTX64.CoInstallers]
+[PID08C7.NTX64.CoInstallers]
 CopyFiles=CopyCoInstaller_X64
 AddReg=CoInstaller_X64.AddReg
 
-[PID08C5.VISTA.Services]
+[PID08C7.VISTA.Services]
 Include=wdma_usb.inf
 Needs=USBAudio.Services
 AddService = lvpopflt,0x00000000,lvpopflt_Service
 
-[PID08C5.VISTA.CoInstallers]
+[PID08C7.VISTA.CoInstallers]
 CopyFiles=CopyCoInstaller
 AddReg=CoInstaller.AddReg
 
-[PID08C5.VISTAX64.Services]
+[PID08C7.VISTAX64.Services]
 Include=wdma_usb.inf
 Needs=USBAudio.Services
 AddService = lvpopf64,0x00000000,lvpopf64_Service
 
-[PID08C5.VISTAX64.CoInstallers]
+[PID08C7.VISTAX64.CoInstallers]
 CopyFiles=CopyCoInstaller_X64
 AddReg=CoInstaller_X64.AddReg
 
@@ -2085,7 +2085,7 @@ WUApp64.exe
 
 [Uninstall]
 DelFiles = WUAPP64.Files,USBMonitor64.CopyFiles,lvPopf64.CopySys,CopyCoInstaller_X64,WUAPP32.Files,USBMonitor.CopyFiles,lvPopflt.CopySys,CopyCoInstaller,lvsels64.CopySys,lvselsus.CopySys,RightSound64.CopyFile,RightSound.CopyFile
-DelReg   = recorddevice.addreg.pid08c2,recorddevice.addreg.nt,recorddevice.addreg.all,recorddevice.addreg,recorddevice.addreg.pid08c3,recorddevice.addreg.pid08c5,recorddevice.addreg.pid08c9,recorddevice.addreg.pid08ca,recorddevice.addreg.pid08cb,\
+DelReg   = recorddevice.addreg.pid08c2,recorddevice.addreg.nt,recorddevice.addreg.all,recorddevice.addreg,recorddevice.addreg.pid08c3,recorddevice.addreg.pid08C7,recorddevice.addreg.pid08c9,recorddevice.addreg.pid08ca,recorddevice.addreg.pid08cb,\
  recorddevice.addreg.pid08cc,recorddevice.addreg.pid08ce,recorddevice.addreg.pid08c6,recorddevice.addreg.pid09c1,recorddevice.addreg.pid0990,recorddevice.addreg.pid0992,recorddevice.addreg.pid0991,recorddevice.addreg.pid0994,rightsoundsrv64.addreg,\
  rightsoundsrv.addreg
 
@@ -2096,7 +2096,7 @@ DISK_NAME="Logitech USB Video Camera Disk"
 USBGenericDesc="Logitech Microphone"
 USB\VID_046D&PID_08C2.DeviceDesc="Logitech Mic (Orbit/Sphere MP)"
 USB\VID_046D&PID_08C3.DeviceDesc="Logitech Mic (Notebooks Pro)"
-USB\VID_046D&PID_08C5.DeviceDesc="Logitech Microphone (Pro 5000)"
+USB\VID_046D&PID_08C7.DeviceDesc="Logitech Microphone (Pro 5000)"
 USB\VID_046D&PID_08C6.DeviceDesc="QuickCam for Dell Notebooks Mic"
 USB\VID_046D&PID_08C9.DeviceDesc="Logitech Mic (Ultra Vision)"
 USB\VID_046D&PID_08CA.DeviceDesc="Logitech Mic (Fusion)"
@@ -2127,7 +2127,7 @@ DISK_NAME="Logicool USB Video Camera Disk"
 USBGenericDesc="Logicool Microphone"
 USB\VID_046D&PID_08C2.DeviceDesc="Logicool Mic (Orbit/Sphere MP)"
 USB\VID_046D&PID_08C3.DeviceDesc="Logicool Mic (Notebooks Pro)"
-USB\VID_046D&PID_08C5.DeviceDesc="Logicool Microphone (Pro 5000)"
+USB\VID_046D&PID_08C7.DeviceDesc="Logicool Microphone (Pro 5000)"
 USB\VID_046D&PID_08C9.DeviceDesc="Logicool Mic (Ultra Vision)"
 USB\VID_046D&PID_08CA.DeviceDesc="Logicool Mic (Fusion)"
 USB\VID_046D&PID_08CB.DeviceDesc="Logicool Mic (Notebooks Pro)"
